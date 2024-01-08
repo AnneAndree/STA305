@@ -64,7 +64,7 @@ input=list(noss=126,y=faster,n=faster+slower,x=speed,vibration=vibr,nsubj=9,subj
 # detach data set
 detach(vibro_exp3)
 
-modello1 <- jags.model("modello_pse_dati1.txt",data=input,n.chains=3)
+modello1 <- jags.model("modello_pse_init.txt",data=input,n.chains=3)
 update(modello1, 500000)
 
 
